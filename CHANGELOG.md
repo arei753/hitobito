@@ -3,6 +3,7 @@
 ## unreleased
 
 *  Tag Verwaltung unter Einstellungen
+*  Erstellen von Rechungen für Abonnenten von Abos
 
 ## Version 1.22
 
