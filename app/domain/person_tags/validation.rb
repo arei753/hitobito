@@ -15,7 +15,10 @@ module PersonTags
       end
 
       def list
-        [email_primary_invalid, email_additional_invalid, address_invalid, invalid_address_override].compact
+        [email_primary_invalid,
+         email_additional_invalid,
+         address_invalid,
+         invalid_address_override].compact
       end
 
       def email_primary_invalid(create: false)
