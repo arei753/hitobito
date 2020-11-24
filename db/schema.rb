@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2020_10_23_124124) do
     t.index ["contactable_id", "contactable_type"], name: "index_additional_emails_on_contactable_id_and_contactable_type"
   end
 
-  create_table "addresses", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+  create_table "addresses", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
     t.string "street_short", limit: 128, null: false
     t.string "street_short_old", limit: 128, null: false
     t.string "street_long", limit: 128, null: false
@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 2020_10_23_124124) do
     t.string "town", limit: 128, null: false
     t.integer "zip_code", null: false
     t.string "state", limit: 128, null: false
-    t.text "numbers", size: :medium
+    t.text "numbers"
     t.index ["zip_code", "street_short"], name: "index_addresses_on_zip_code_and_street_short"
   end
 
